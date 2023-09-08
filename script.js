@@ -18,8 +18,8 @@ const calculateTemp = () => {
   };
 
   if (valueTemp == "celsius") {
-    document.getElementById("temp").innerHTML = celToFah(inputTemp) + "&#176;F";
+    document.getElementById("temp").innerHTML = celToFah(inputTemp) + " &#176;F";
   } else {
-    document.getElementById("temp").innerHTML = fahToCel(inputTemp) + "&#176;C";
+    document.getElementById("temp").innerHTML = fahToCel(inputTemp) + " &#176;C";
   }
 };

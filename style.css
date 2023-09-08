@@ -8,39 +8,32 @@
 
 body {
   background-color: #111927;
-  background-image: 
-      radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
-      radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+  background-image: radial-gradient(at 47% 33%, hsl(162, 77%, 40%) 0, transparent 59%),
+                    radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%);
 
- 
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  /* position: relative; */
 }
 
 .title1 {
   color: #ffffff;
-  /* font-size: 1.7rem; */
-  font-size: clamp(1.0rem , 4vw , 2.0rem);
+  font-size: clamp(1.2rem, 4vw, 2rem);
   position: absolute;
-  /* width: 100%; */
-  /* margin: auto; */
+  text-align: center;
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .temperature-converter {
   border-radius: 5px;
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 90px 30px 20px;
-  
 }
 .result {
   min-width: 360px;
@@ -54,12 +47,10 @@ body {
   flex-direction: column;
 }
 .container {
-  height:  450px;
+  height: 450px;
   width: auto;
-  /* margin: 10px 20px; */
   display: flex;
   position: relative;
-  /* padding: 40px 0; */
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(16px) saturate(180%);
@@ -70,15 +61,15 @@ body {
   flex-wrap: wrap;
 }
 @media (max-width: 620px) {
-  .container{
+  .container {
     width: 100%;
   }
-.degree-type {
-  flex-direction: column;
-}
+  .degree-type {
+    flex-direction: column;
+  }
 }
 .result-heading {
-  color:  white;
+  color: white;
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -87,12 +78,10 @@ body {
   padding: 10px;
   color: white;
   font-size: 1.2rem;
-  
 }
 label {
   color: white;
-  /* font-size: 1.2rem; */
-  font-size: clamp(1.0rem , 2vw , 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   margin-bottom: 15px;
 }
 input,
@@ -106,21 +95,19 @@ select {
   text-align: center;
   color: white;
 }
-::placeholder{
+::placeholder {
   color: white;
 }
 .degree-type {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   text-align: center;
   padding: 8px 0;
   margin: auto;
   font-size: 1.6rem;
 }
-.degree-field{
-  /* margin-left: 40px; */
-}
+
 #degree {
   width: 30%;
 }
