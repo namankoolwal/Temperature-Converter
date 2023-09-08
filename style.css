@@ -5,19 +5,16 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   background-color: #111927;
   background-image: radial-gradient(at 47% 33%, hsl(162, 77%, 40%) 0, transparent 59%),
                     radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%);
-
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
 }
-
 .title1 {
   color: #ffffff;
   font-size: clamp(1.2rem, 4vw, 2rem);
@@ -69,7 +66,7 @@ body {
   border-bottom: 2px solid #ffffff;
   padding: 10px;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
 }
 label {
   color: white;
@@ -99,7 +96,6 @@ select {
   margin: auto;
   font-size: 1.6rem;
 }
-
 #degree {
   width: 30%;
 }
@@ -125,7 +121,6 @@ option {
 #convert-btn:hover {
   background: linear-gradient(to bottom right, #47e76fd5, #73da2fd7);
 }
-
 @media (max-width: 620px) {
   .container {
     width: 100%;
