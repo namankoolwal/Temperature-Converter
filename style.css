@@ -7,32 +7,40 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom right, #f1b5ec, #b29fdfec);
-  color: #222;
-  font-size: 2rem;
+  background-color: #111927;
+  background-image: 
+      radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+      radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+
+ 
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  position: relative;
+  /* position: relative; */
 }
+
 .title1 {
-  color: #222;
-  font-size: 1.7rem;
+  color: #ffffff;
+  /* font-size: 1.7rem; */
+  font-size: clamp(1.0rem , 4vw , 2.0rem);
   position: absolute;
+  /* width: 100%; */
+  /* margin: auto; */
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .temperature-converter {
   border-radius: 5px;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 90px 30px 20px;
-  min-width: 420px;
+  
 }
 .result {
   min-width: 360px;
@@ -46,29 +54,45 @@ body {
   flex-direction: column;
 }
 .container {
-  height: 400px;
+  height:  450px;
+  width: auto;
+  /* margin: 10px 20px; */
   display: flex;
+  position: relative;
+  /* padding: 40px 0; */
   align-items: center;
   justify-content: center;
-  box-shadow: 3px 3px 4px rgb(165, 165, 165);
-  background-image: linear-gradient(to bottom right, #abeff577, #c3e0db49);
-  border-radius: 5px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.795);
   flex-wrap: wrap;
-  position: relative;
+}
+@media (max-width: 620px) {
+  .container{
+    width: 100%;
+  }
+.degree-type {
+  flex-direction: column;
+}
 }
 .result-heading {
-  color:  #111111;
+  color:  white;
   font-size: 1.5rem;
   font-weight: 400;
 }
 .celsius-value {
-  border-bottom: 2px solid #949494;
+  border-bottom: 2px solid #ffffff;
   padding: 10px;
+  color: white;
+  font-size: 1.2rem;
   
 }
 label {
-  color: #111111;
-  font-size: 1.2rem;
+  color: white;
+  /* font-size: 1.2rem; */
+  font-size: clamp(1.0rem , 2vw , 1.5rem);
   margin-bottom: 15px;
 }
 input,
@@ -76,24 +100,32 @@ select {
   background: transparent;
   border: none;
   outline: none;
-  border-bottom: 2px solid #949494;
+  border-bottom: 2px solid white;
   margin-bottom: 15px;
   font-size: 18px;
   text-align: center;
+  color: white;
+}
+::placeholder{
+  color: white;
 }
 .degree-type {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
   padding: 8px 0;
+  margin: auto;
   font-size: 1.6rem;
 }
-
+.degree-field{
+  /* margin-left: 40px; */
+}
 #degree {
-  width: 35%;
+  width: 30%;
 }
 option {
-  background-color: rgba(121, 212, 121, 0.726);
+  background-color: rgba(255, 255, 255, 0.726);
   color: rgb(0, 0, 0);
   height: 55px;
 }
@@ -102,7 +134,7 @@ option {
   border: none;
   outline: none;
   border-radius: 5px;
-  color: #000000;
+  color: #ffffff;
   cursor: pointer;
   font-weight: bold;
   letter-spacing: 1.4px;
