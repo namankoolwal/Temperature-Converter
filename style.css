@@ -60,14 +60,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.795);
   flex-wrap: wrap;
 }
-@media (max-width: 620px) {
-  .container {
-    width: 100%;
-  }
-  .degree-type {
-    flex-direction: column;
-  }
-}
 .result-heading {
   color: white;
   font-size: 1.5rem;
@@ -132,4 +124,13 @@ option {
 }
 #convert-btn:hover {
   background: linear-gradient(to bottom right, #47e76fd5, #73da2fd7);
+}
+
+@media (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+  .degree-type {
+    flex-direction: column;
+  }
 }
