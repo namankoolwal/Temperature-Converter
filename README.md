@@ -13,6 +13,7 @@ Author: Naman Khandelwal
 5. Select the desired temperature unit to convert to from the second dropdown.
 6. Click the "Convert" button to see the converted temperature.
 
-OUTPUT:
-![Untitled](https://github.com/namankoolwal/Temperature-Converter/assets/104143943/69ac45d1-d186-4ecf-9a33-e3d20f25ebe5)
+## OUTPUT:
+
+![output](https://github.com/namankoolwal/Temperature-Converter/assets/104143943/0b88c77e-6c00-4efc-aaf7-e746b64a8d91)
 
